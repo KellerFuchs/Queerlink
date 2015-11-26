@@ -58,8 +58,6 @@ require Logger
         {:error, :localhost}
       "::1" ->
         {:error, :localhost}
-      nil ->
-        {:error, :invalid_url}
       _ ->
         URI.to_string(uri)
     end
